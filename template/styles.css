@@ -1,0 +1,248 @@
+/* ==========================================================================
+   1. VARIÁVEIS GLOBAIS (Paleta de Cores)
+   ========================================================================== */
+:root {
+    --azul-escuro: #0f2847;
+    --azul-claro: #1a4275;
+    --cinza-fundo: #f8f9fa;
+    --cinza-borda: #e2e8f0;
+    --texto-padrao: #333333;
+}
+
+/* ==========================================================================
+   2. ESTILOS GLOBAIS (Base da página)
+   ========================================================================== */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--texto-padrao);
+}
+
+/* Utilitários Customizados para uso em qualquer página */
+.text-azul-escuro {
+    color: var(--azul-escuro) !important;
+}
+
+/* ==========================================================================
+   3. CABEÇALHO E RODAPÉ (Layout)
+   ========================================================================== */
+.navbar-brand {
+    font-weight: bold;
+}
+
+.footer-bg {
+    background-color: var(--cinza-fundo);
+    border-top: 1px solid #eaeaea;
+}
+
+/* ==========================================================================
+   4. PÁGINA INICIAL (index.php)
+   ========================================================================== */
+/* Banner Principal (Hero) */
+.bg-hero {
+    background-color: var(--azul-escuro);
+    background-image: linear-gradient(135deg, var(--azul-escuro) 0%, var(--azul-claro) 100%);
+    color: white;
+}
+
+.bg-hero .btn-outline-light:hover {
+    color: var(--azul-escuro);
+}
+
+/* Cards de Programação / Cultos */
+.card-culto {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-top: 4px solid var(--azul-escuro) !important;
+}
+
+.card-culto:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1) !important;
+}
+
+/* ==========================================================================
+   5. PÁGINA SOBRE (sobre.php)
+   ========================================================================== */
+/* Espaço provisório para a foto da congregação */
+.foto-placeholder {
+    background-color: var(--cinza-fundo);
+    border: 1px solid var(--cinza-borda);
+    min-height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    color: #64748b;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+/* Ícones redondos de Missão, Visão e Valores */
+.icon-circulo {
+    width: 80px;
+    height: 80px;
+    background-color: white;
+    border: 2px solid var(--cinza-borda);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.5rem auto;
+    color: var(--azul-escuro);
+    transition: all 0.3s ease;
+}
+
+/* Efeito ao passar o mouse nos cards de Missão, Visão e Valores */
+.card-mvv:hover .icon-circulo {
+    background-color: var(--azul-escuro);
+    color: white;
+    border-color: var(--azul-escuro);
+}
+
+/* Avatares da Liderança (Círculos com iniciais) */
+.avatar-iniciais {
+    width: 100px;
+    height: 100px;
+    background-color: var(--cinza-borda);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1rem auto;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--azul-escuro);
+}
+
+/* ==========================================================================
+   6. PÁGINA DE PROGRAMAÇÃO (programacao.php)
+   ========================================================================== */
+/* Efeito para a lista de programação semanal */
+.card-lista {
+    border-left: 4px solid transparent !important;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.card-lista:hover {
+    transform: translateX(5px); /* Move levemente para a direita */
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.08) !important;
+    border-left-color: var(--azul-escuro) !important; /* Destaca a borda esquerda */
+}
+
+/* Efeito para os cards de eventos especiais */
+.card-evento {
+    border-top: 4px solid transparent !important;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.card-evento:hover {
+    transform: translateY(-5px); /* Move levemente para cima */
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1) !important;
+    border-top-color: var(--azul-escuro) !important;
+}
+
+/* ==========================================================================
+   7. PÁGINA DE CONTATO (contato.php)
+   ========================================================================== */
+/* Ícones da lateral esquerda (Atualizado: Fundo Azul Escuro, Ícone Branco) */
+.icon-contato {
+    width: 45px;
+    height: 45px;
+    background-color: var(--azul-escuro); /* Fundo alterado */
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white; /* Cor do ícone alterada */
+    font-size: 1.2rem;
+    flex-shrink: 0;
+}
+
+/* Campos de formulário com design "linha" (Material Design) */
+.form-control-linha {
+    border: none;
+    border-bottom: 1px solid #ced4da;
+    border-radius: 0;
+    padding-left: 0;
+    padding-right: 0;
+    background-color: transparent;
+    transition: border-color 0.3s ease;
+}
+
+.form-control-linha:focus {
+    box-shadow: none;
+    border-color: var(--azul-escuro);
+    background-color: transparent;
+}
+
+/* Redimensionamento fixo para a caixa de mensagem */
+textarea.form-control-linha {
+    resize: none;
+}
+
+/* Placeholder do Mapa */
+.mapa-placeholder {
+    background-color: #e2e8f0;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #64748b;
+    font-weight: 500;
+    position: relative;
+}
+
+.btn-mapa {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background: white;
+    border: 1px solid #ced4da;
+    padding: 5px 15px;
+    border-radius: 4px;
+    font-size: 0.85rem;
+    color: #333;
+    text-decoration: none;
+}
+
+/* ==========================================================================
+   8. AJUSTES DO MENU MOBILE (Hambúrguer)
+   ========================================================================== */
+.navbar-toggler {
+    padding: 0.25rem 0.5rem; /* Reduz o espaço em volta do ícone, deixando a caixa menor */
+    font-size: 0.9rem; /* Diminui o tamanho do ícone (o padrão é 1.25rem) */
+    border: 1px solid var(--cinza-borda, #e2e8f0); /* Cria uma borda bem sutil e fina */
+    border-radius: 6px; /* Deixa as pontas levemente arredondadas */
+    transition: all 0.2s ease;
+}
+
+/* Remove a sombra esquisita e o contorno forte ao clicar (Focus) */
+.navbar-toggler:focus {
+    box-shadow: none;
+    outline: none;
+}
+
+/* Adiciona um fundo levemente cinza ao passar o dedo/mouse */
+.navbar-toggler:hover {
+    background-color: var(--cinza-fundo, #f8f9fa);
+}
+
+/* ==========================================================================
+   9. AJUSTES DO TÍTULO DO CABEÇALHO (Mobile)
+   ========================================================================== */
+.navbar-brand {
+    white-space: normal; /* Permite que o texto quebre em várias linhas */
+    font-size: 1.1rem; /* Diminui levemente a fonte no celular */
+    max-width: 75%; /* Garante que o texto não invada o espaço do botão */
+    line-height: 1.2;
+}
+
+/* Quando a tela for grande (Desktop), volta ao comportamento normal do Bootstrap */
+@media (min-width: 992px) {
+    .navbar-brand {
+        white-space: nowrap; 
+        font-size: 1.25rem; 
+        max-width: none;
+    }
+}
