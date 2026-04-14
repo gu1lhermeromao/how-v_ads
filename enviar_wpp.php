@@ -7,6 +7,28 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email = $_POST['email'];
     $mensagem = $_POST['mensagem'];
 
+    // Validação de Nome
+    if (empty($nome)) {
+        // Se estiver vazio, redireciona de volta avisando o erro
+        header("Location: contato.php?erro=nome");
+        exit();
+    }
+
+    // Validação de E-mail
+    if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+        // Se for inválido, redireciona de volta avisando o erro
+        header("Location: contato.php?erro=email");
+        exit();
+    }
+
+    // Validação do tamanho da Mensagem (Máximo de 500 caracteres)
+    $tamanho_maximo = 500;
+    if (strlen($mensagem) > $tamanho_maximo || strlen($mensagem) == 0) {
+        // Se for maior que 500 ou vazio, redireciona de volta avisando o erro
+        header("Location: contato.php?erro=tamanho");
+        exit();
+    }
+
     // Define o número do WhatsApp de destino
     $telefone_destino = "554899266008";
 

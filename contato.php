@@ -70,6 +70,25 @@
 
                 <div class="col-12 col-lg-5 offset-lg-1">
                     <h4 class="fw-bold mb-4 text-azul-escuro">Envie sua mensagem</h4>
+
+                    <?php if (isset($_GET['erro'])): ?>
+                        <?php elseif ($_GET['erro'] == 'nome'): ?>
+                            <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                                <strong>Erro!</strong> Por favor, insira seu nome.
+                                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                            </div>
+                        <?php if ($_GET['erro'] == 'email'): ?>
+                            <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                                <strong>Erro!</strong> Por favor, insira um endereço de e-mail válido.
+                                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                            </div>
+                        <?php elseif ($_GET['erro'] == 'tamanho'): ?>
+                            <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                                <strong>Erro!</strong> Sua mensagem deve conter entre 1 e 500 caracteres.
+                                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                            </div>
+                        <?php endif; ?>
+                    <?php endif; ?>
                     
                     <form action="enviar_wpp.php" method="POST">
     
