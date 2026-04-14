@@ -71,25 +71,25 @@
                 <div class="col-12 col-lg-5 offset-lg-1">
                     <h4 class="fw-bold mb-4 text-azul-escuro">Envie sua mensagem</h4>
                     
-                    <form action="#" method="POST">
-                        
+                    <form action="enviar_wpp.php" method="POST">
+    
                         <div class="mb-4">
                             <label for="nome" class="form-label fw-semibold small mb-1">Nome</label>
-                            <input type="text" class="form-control form-control-linha" id="nome" placeholder="Seu nome completo" required>
+                            <input type="text" name="nome" class="form-control form-control-linha" id="nome" placeholder="Seu nome completo" required>
                         </div>
 
                         <div class="mb-4">
                             <label for="email" class="form-label fw-semibold small mb-1">E-mail</label>
-                            <input type="email" class="form-control form-control-linha" id="email" placeholder="seu@email.com" required>
+                            <input type="email" name="email" class="form-control form-control-linha" id="email" placeholder="seu@email.com" required>
                         </div>
 
                         <div class="mb-5">
                             <label for="mensagem" class="form-label fw-semibold small mb-1">Mensagem</label>
-                            <textarea class="form-control form-control-linha" id="mensagem" rows="4" placeholder="Como podemos ajudar?" required></textarea>
+                            <textarea name="mensagem" class="form-control form-control-linha" id="mensagem" rows="4" placeholder="Como podemos ajudar?" required></textarea>
                         </div>
 
                         <button type="submit" class="btn btn-outline-secondary px-4 py-2 bg-white text-dark fw-medium border-2" style="border-radius: 6px;">
-                            Enviar mensagem
+                            Enviar mensagem no WhatsApp
                         </button>
                     </form>
                 </div>
