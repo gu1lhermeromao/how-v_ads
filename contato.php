@@ -12,7 +12,7 @@
             </p>
             <h1 class="display-5 fw-bold text-white mb-3" style="font-family: Georgia, serif;">Fale Conosco</h1>
             <p class="lead text-white mx-auto" style="max-width: 600px;">
-                Estamos aqui para ouvir você.<br>Entre em contato ou visite-nos pessoalmente.
+                Entre em contato ou visite-nos pessoalmente.
             </p>
         </div>
     </section>
@@ -30,16 +30,6 @@
                         <div>
                             <h6 class="fw-bold mb-1">Endereço</h6>
                             <p class="text-muted small mb-0">Av. Prefeito José Juvenal Mafra, 1681<br>Centro, Navegantes, SC</p>
-                        </div>
-                    </div>
-
-                    <div class="d-flex mb-4">
-                        <div class="icon-contato me-3 shadow-sm">
-                            <i class="bi bi-telephone"></i>
-                        </div>
-                        <div>
-                            <h6 class="fw-bold mb-1">Telefone</h6>
-                            <p class="text-muted small mb-0">(47) 9700-0705</p>
                         </div>
                     </div>
 

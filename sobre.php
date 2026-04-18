@@ -54,7 +54,7 @@
                             </div>
                             <h4 class="fw-bold mb-3">Missão</h4>
                             <p class="small text-white">
-                                Proclamar o evangelho de Jesus Cristo, promovendo a transformação de vidas através do amor, da fé e do serviço ao próximo.
+                                Proclamar fielmente o evangelho do Senhor Jesus Cristo, fazer discípulos e viver para a glória de Deus.
                             </p>
                         </div>
                     </div>
@@ -68,7 +68,7 @@
                             </div>
                             <h4 class="fw-bold mb-3">Visão</h4>
                             <p class="small text-white">
-                                Ser uma comunidade cristã referência em acolhimento, formação espiritual e impacto social, alcançando vidas em toda a cidade.
+                                Ser uma comunidade cristã firmada nas Escrituras, marcada pelo acolhimento, pela formação espiritual e pelo testemunho do evangelho em toda a cidade.
                             </p>
                         </div>
                     </div>
@@ -82,7 +82,7 @@
                             </div>
                             <h4 class="fw-bold mb-3">Valores</h4>
                             <p class="small text-white">
-                                Amor ao próximo, integridade, oração, comunhão, serviço, ensino bíblico e compromisso com a justiça social.
+                                Fidelidade às Escrituras, centralidade do evangelho, amor fraternal, oração, santidade, comunhão, serviço cristão e compaixão para com o próximo.
                             </p>
                         </div>
                     </div>
@@ -97,21 +97,22 @@
 
             <div class="row g-4 justify-content-center">
                 <div class="col-12 col-sm-6 col-md-4">
-                    <div class="avatar-iniciais shadow-sm">AN</div>
-                    <h5 class="fw-bold mb-1">Andrey Naumann</h5>
-                    <p class="text-muted small">Pastor Titular</p>
+                    <div class="avatar-iniciais shadow-sm">FS</div>
+                    
+                    <h5 class="fw-bold mb-1">Dc. Feliciano Santos</h5>
+                    <p class="text-muted small">Vice-presidente</p>
                 </div>
 
                 <div class="col-12 col-sm-6 col-md-4">
                     <div class="avatar-iniciais shadow-sm">AN</div>
-                    <h5 class="fw-bold mb-1">Andrey Naumann</h5>
-                    <p class="text-muted small">Pastor Titular</p>
+                    <h5 class="fw-bold mb-1">Pr. Andrey Naumann</h5>
+                    <p class="text-muted small">Pastor presidente</p>
                 </div>
 
                 <div class="col-12 col-sm-6 col-md-4">
-                    <div class="avatar-iniciais shadow-sm">DM</div>
-                    <h5 class="fw-bold mb-1">Pr. Daniel Moreira</h5>
-                    <p class="text-muted small">Coordenador de Missões</p>
+                    <div class="avatar-iniciais shadow-sm">ES</div>
+                    <h5 class="fw-bold mb-1">Dc. Eveton Schmitt</h5>
+                    <p class="text-muted small">Tesoureiro</p>
                 </div>
             </div>
         </div>

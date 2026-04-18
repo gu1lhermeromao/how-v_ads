@@ -30,7 +30,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 
     // Define o número do WhatsApp de destino
-    $telefone_destino = "554899266008";
+    $telefone_destino = "554797360105";
 
     // Monta o texto que vai chegar no WhatsApp
     $texto = "Olá, meu nome é *" . $nome . "*.\n";
