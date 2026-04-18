@@ -3,7 +3,7 @@
         <div class="row">
             <div class="col-md-4 mb-3">
                 <h5 class="fw-bold">Igreja Batista Reformada Navegantes</h5>
-                <p class="text-white small">Uma comunidade de fé, amor e esperança. Todos são bem-vindos.</p>
+                <p class="text-white small">Uma comunidade de fé, esperança e amor.</p>
             </div>
             <div class="col-md-2 mb-3">
                 <h6 class="fw-bold">Navegação</h6>
@@ -22,8 +22,6 @@
             <div class="col-md-2 mb-3 text-md-end">
                 <h6 class="fw-bold">Redes Sociais</h6>
                 <a href="https://www.instagram.com/igrejabatistanavegantes/" target="_blank" class="text-white me-2"><i class="bi bi-instagram"></i></a>
-                <a href="#" class="text-white me-2"><i class="bi bi-facebook"></i></a>
-                <a href="#" class="text-white"><i class="bi bi-youtube"></i></a>
             </div>
         </div>
         <div class="text-center mt-4 pt-3 border-top text-white small">

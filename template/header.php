@@ -12,7 +12,10 @@
 
 <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom py-3">
     <div class="container">
-        <a class="navbar-brand" href="index.php">Igreja Batista Reformada Navegantes</a>
+        <a class="navbar-brand d-flex align-items-center gap-2" href="index.php">
+            <img src="imagens/logo.svg" alt="Logo Igreja" width="45" height="45">
+            <span>Igreja Batista Reformada Navegantes</span>
+        </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal">
             <span class="navbar-toggler-icon"></span>
         </button>
